@@ -1,18 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Redistration Form </title>
 </head>
+
 <body>
-<form action="">
-    <p>First Name : <input type="text"></p>
-    <p>Last name : <input type="text"></p>
-    <p> Gender : <input type="radio" name="Gender" id="male"><label for="Gender">Male </label>
-    <input type="radio" name="Gender" id="female"> <label for="Gender">female</label></p>
-    <p>Email : <input type="email" name="mail" id="mail"></p>
-    <p>Address : </p> <textarea name="Address" id="Address" cols="35" aria-readonly="7"></textarea>
-</form>    
+    <center>
+        <h1>Regisration Form </h1>
+        <table border="1" bgcolor="
+        #dad1d2">
+            <tr>
+                <th>Enter your First Name</th>
+                <td><input type="text" placeholder="Yrour First Name " required maxlength="15" minlength="3"></td>
+            </tr>
+            <tr>
+                <th>Enter your Last Name</th>
+                <td><input type="text" required maxlength="15" minlength="3"></td>
+            </tr>
+            <tr>
+                <th>Enter your Password </th>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <th>ReEnter your Password </th>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <th>Enter your Email </th>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <th>Enter your Mobile </th>
+                <td><input type="number" name="number"></td>
+            </tr>
+            <tr>
+                <th>Enter your address</th>
+                <td><textarea name="address" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <th>Select Your Gender</th>
+                <td><input type="radio" name="Gender" id="male"> <label for="male">Male </label>
+                    <input type="radio" name="Gender" id="female"><label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Select Sports You Love</th>
+                <td>
+                    <input type="checkbox" id="cricket"><label for="cricket">cricket</label>
+                    <input type="checkbox" id="hockey"><label for="hockey">hockey</label>
+                    <input type="checkbox" id="football"><label for="football">football</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Slect your Date Of Birth</th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th>Select your Country</th>
+                <td>
+                    <select className="border p-2 rounded">
+                        <option value="" selected disabled>Select Your Country</option>
+                        <option value="us">United States</option>
+                        <option value="pk">Pakistan</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="in">India</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr><th>Upload Image</th>
+            <td>
+                <input type="file" accept="Image/*">
+            </td></tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Register</button>
+                <button type="reset">Reset</button></td>
+
+
+            </tr>
+
+        </table>
+    </center>
 </body>
+
 </html>
